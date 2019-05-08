@@ -1,0 +1,19 @@
+{
+	"name": "scheduleplanner",
+	"private": true,
+	"description": "Develop a responsive page",
+	"author": "Constantine Genchevsky",
+	"version": "1.0.0",
+	"dependencies": {},
+	"devDependencies": {
+		"neutrino": "~8.3.0",
+		"@atomspace/stylelint": "~1.1.1",
+		"browser-sync": "2.24.7",
+		"htmlhint": "0.10.1"
+	},
+	"scripts": {
+		"start": "browser-sync start --server \"src\" --files \"src\" --no-open --no-notify --no-ghost-mode",
+		"test": "htmlhint src/**/*.html",
+		"pretest": "neutrino stylelint --fix"
+	}
+}
